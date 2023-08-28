@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://c27kntc77eoab"]
 
-[ext_resource type="PackedScene" uid="uid://dyetjwipdkolt" path="res://scn/Character2D3D.tscn" id="1_8ticj"]
-[ext_resource type="Script" path="res://code/Skel3DExample.cs" id="2_6g6u4"]
+[ext_resource type="PackedScene" uid="uid://dyetjwipdkolt" path="res://scn/Character2D3D.tscn" id="1_yemvr"]
+[ext_resource type="Script" path="res://code/Skel3DExample.cs" id="2_77pgd"]
 
 [sub_resource type="Environment" id="Environment_lh1mx"]
 
@@ -16,8 +16,8 @@ transform = Transform3D(1, 0, 0, 0, 0.42208, 0.906558, 0, -0.906558, 0.42208, 0,
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(0.994912, -0.0346365, 0.0946027, 0, 0.93904, 0.343807, -0.100744, -0.342058, 0.934263, 0.914563, 1.14847, 1.8455)
 
-[node name="character_2d_3d" parent="." instance=ExtResource("1_8ticj")]
+[node name="character_2d_3d" parent="." instance=ExtResource("1_yemvr")]
 
 [node name="proc_3d_example" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.90097, 0, 0)
-script = ExtResource("2_6g6u4")
+script = ExtResource("2_77pgd")
